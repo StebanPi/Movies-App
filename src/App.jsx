@@ -24,6 +24,7 @@ function App() {
             <Route path="/movie/:id" element={<MoviePage></MoviePage>} />
 
             <Route path="/search" element={<SearchPage></SearchPage>}></Route>
+            <Route path="/*" element={<IndexPage />}></Route>
           </Routes>
         </div>
       </ThemeProvider>
