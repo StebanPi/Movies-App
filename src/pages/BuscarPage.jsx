@@ -92,7 +92,7 @@ const SearchPage = () => {
   };
 
   return (
-    <div className="py-8">
+    <div className="py-8 animate__animated animate__fadeIn">
       {/* Barra de búsqueda */}
       <div className="mb-8">
         <Card>

@@ -6,6 +6,7 @@ import { MoviesProvider } from "./context/MoviesContext";
 import { Navbar } from "./components/layout/Navbar";
 import MoviePage from "./pages/MoviePage";
 import SearchPage from "./pages/BuscarPage";
+import "animate.css";
 
 function App() {
   return (

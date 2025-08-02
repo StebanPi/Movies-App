@@ -24,7 +24,7 @@ export const MovieCard = ({ movie }) => {
   };
 
   return (
-    <Card className="w-64 overflow-hidden group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-background to-muted/20">
+    <Card className="w-60 overflow-hidden group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-background to-muted/20">
       <div className="relative overflow-hidden">
         {/* Poster Image */}
         <div className="aspect-[2/3] relative">
@@ -75,9 +75,11 @@ export const MovieCard = ({ movie }) => {
       <CardContent className="p-3 space-y-2">
         {/* Title */}
         <div>
-          <h3 className="font-bold text-sm leading-tight line-clamp-2 group-hover:text-primary transition-colors">
-            {movie.title}
-          </h3>
+          <Link to={`/movie/${movie.id}`}>
+            <h3 className="font-bold hover:cursor-pointer text-sm leading-tight line-clamp-2 group-hover:text-primary transition-colors">
+              {movie.title}
+            </h3>
+          </Link>
         </div>
 
         {/* Genres */}

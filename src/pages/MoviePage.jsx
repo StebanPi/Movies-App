@@ -43,7 +43,7 @@ export default function MoviePage() {
   };
 
   return (
-    <div className="min-h-screen bg-background p-3 sm:p-6">
+    <div className="min-h-screen bg-background p-3 sm:p-6 animate__animated animate__fadeInLeft">
       {/* Navigation */}
       <div className="max-w-6xl mx-auto mb-4 sm:mb-8">
         <Button
